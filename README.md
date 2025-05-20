@@ -1,1 +1,1 @@
-# TypeRush-BotStatus
+# TypeRush!-BotStatus
