@@ -30,22 +30,18 @@
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
     }
+    .bot-icon {
+      font-size: 70px;
+      margin: 30px 0 2px 0; /* bottom margin reduced to 2px */
+      color: #ff6600;
+    }
     .content {
       padding: 30px 30px 60px;
       box-sizing: border-box;
     }
-    .icon-heading {
+    .content h1 {
       color: #ff6600;
-      margin: 0;
-      font-size: 28px;
-    }
-    .icon-heading .bot-icon {
-      font-size: 32px;
-      vertical-align: middle;
-      margin-right: 5px;
-    }
-    .content p {
-      margin: 10px 0;
+      margin-top: 0;
     }
     #datetime {
       font-size: 12px;
@@ -63,8 +59,9 @@
 <body>
   <div class="status">
     <div class="header">TypeRush!</div>
+    <div class="bot-icon">🤖</div>
     <div class="content">
-      <h1 class="icon-heading"><span class="bot-icon">🤖</span>Bot Is Under Maintenance</h1>
+      <h1>Bot Is Under Maintenance</h1>
       <p>We’re currently making some updates. Please check back in a few hours!</p>
       <p>
         We sincerely apologize for the inconvenience caused.<br /><br />
@@ -77,9 +74,12 @@
   <script>
     function updateDateTime() {
       const now = new Date();
+
       const optionsDate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
       const formattedDate = now.toLocaleDateString(undefined, optionsDate);
+
       const formattedTime = now.toLocaleTimeString();
+
       document.getElementById('datetime').textContent = `${formattedDate} - ${formattedTime}`;
     }
 
