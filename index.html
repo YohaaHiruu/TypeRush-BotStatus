@@ -20,7 +20,6 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       overflow: hidden;
       position: relative; /* for datetime positioning */
-      /* Removed fixed width and min-height */
     }
     .header {
       background: #007BFF; /* Blue */
@@ -30,6 +29,11 @@
       font-weight: bold;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
+    }
+    .bot-icon {
+      font-size: 48px;
+      margin: 20px 0 10px 0;
+      color: #ff6600;
     }
     .content {
       padding: 30px 30px 60px; /* add bottom padding for datetime */
@@ -55,8 +59,9 @@
 <body>
   <div class="status">
     <div class="header">TypeRush!</div>
+    <div class="bot-icon">🤖</div>
     <div class="content">
-      <h1>🤖 Bot Is Under Maintenance</h1>
+      <h1>Bot Is Under Maintenance</h1>
       <p>We’re currently making some updates. Please check back in a few hours!</p>
       <p>
         We sincerely apologize for the inconvenience caused.<br /><br />
